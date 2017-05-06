@@ -365,8 +365,6 @@ libxss1
 libxtables11
 linux-base
 linux-libc-dev
-linux-u-boot-orangepizero-dev
-linux-xenial-root-dev-orangepizero
 locales
 login
 logrotate
