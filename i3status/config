@@ -16,6 +16,7 @@ order += "disk /"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery 0"
+order += "cpu_temperature 0"
 order += "load"
 order += "tztime local"
 
@@ -32,10 +33,10 @@ ethernet _first_ {
 
 battery 0 {
         format = "%status %percentage"
-		path = "/sys/class/power_supply/battery/uevent"
-		low_threshold = 10
-		hide_seconds = true
-		integer_battery_capacity = true
+        path = "/sys/class/power_supply/battery/uevent"
+        low_threshold = 10
+        hide_seconds = true
+        integer_battery_capacity = true
 }
 
 run_watch DHCP {
@@ -50,10 +51,10 @@ load {
         format = "%1min"
 }
 
-#cpu_temperature 0 {
-#	format = "T: %degrees C"
-#	path = "/sys/class/axppower/ic_temp"
-#}
+cpu_temperature 0 {
+    format = "T: %degrees C"
+    path = "/sys/devices/virtual/thermal/thermal_zone0/temp"
+}
 
 disk "/" {
         format = "%avail"
