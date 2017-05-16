@@ -1,0 +1,111 @@
+xserver-xorg-core
+xserver-xorg-input-kbd
+xserver-xorg-input-mouse
+xserver-xorg-input-evdev
+xserver-xorg-video-geode
+xfonts-100dpi
+xfonts-scalable
+xfonts-base
+
+#		X stuff
+xauth
+xinit
+uxterm
+xutils
+xsel
+x11-xserver-utils
+
+##all optional stuff
+
+
+#		math
+qalc
+gnuplot
+units
+
+#		time
+ntpdate
+at
+
+#		media
+gstreamer0.10-ffmpeg
+gstreamer0.10-plugins-bad
+gstreamer0.10-plugins-ugly
+feh
+mplayer
+mpd
+mpc
+ncmpc
+scrot
+
+#		documents
+epdfview
+unrtf
+antiword
+aspell
+odt2txt
+aspell-en
+html2text
+tofrodos
+xmlstarlet
+
+#		utilities
+hal
+lshw
+screen
+pmount
+dosfstools
+rdesktop
+mc
+xbindkeys
+atop
+unzip
+mmv
+diff
+bzip2
+gtkcolor2
+
+#		net stuff
+sshfs
+openssh-server
+nmap
+netcat
+rsync
+curl
+irssi
+openssh-client
+w3m
+w3m-img
+deluge
+wpasupplicant
+#wget "http://download.mozilla.org/?product=firefox-3.0.4&os=linux&lang=en-US"
+#www-mechanize-perl
+
+#		devel stuff
+gcc
+autoconf
+automake
+build-essential
+cmake
+make
+
+#		devel libs
+libglib2.0-dev
+#	general
+libX11-dev
+#	dwm,dzen,torsmo,stalonetray
+libncurses-dev
+#	fm,ncmpcpp,biew
+libimlib2-dev
+#	bgs
+libcurl4-gnutls-dev
+#	wmweather
+libxpm-dev
+#	dzen,wmweather
+
+#		games
+gnuchess
+eboard
+
+#dzen2
+#	nano config.mk, enable xpm + disable xinerama
