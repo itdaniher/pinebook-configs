@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+for card in $(find /sys -name oemid | sed -e 's/\/oemid//g'); do
+	echo "checking sysfs..."
+	echo $card
+    cd $card
+	for f in cid manfid oemid name date serial hwrev fwrev preferred_erase_size; do
+		echo "$f: " `cat $f`
+	done
+	echo "\n"
+done
+
